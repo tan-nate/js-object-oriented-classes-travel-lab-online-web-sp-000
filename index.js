@@ -3,4 +3,8 @@ class Driver {
     this.name = name
     this.startDate = new Date(startDate)
   }
+
+  yearsExperienceFromBeginningOf(date) {
+    this.startDate.getFullYear() - parseInt(date, 10)
+  }
 }
